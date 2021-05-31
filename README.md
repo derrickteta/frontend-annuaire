@@ -10,7 +10,7 @@ notament en remplacant localhost par les addresses ip.
 
 pour compiler,
 après l'avoir cloné,
-se placer au niveau du dossier backendannuaire 
+se placer au niveau du dossier frontendannuaire 
 ensuite npm install et ng serve.
 
 
