@@ -1,5 +1,5 @@
 # frontend-annuaire
-c'est le front-end de l'appliation de gestion du carnet d'addresse
+c'est le front-end de l'application de gestion du carnet d'addresse
 il est fait en angular
 
 pour ne rien changer dans le code avant de tester, 
