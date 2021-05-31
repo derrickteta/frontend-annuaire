@@ -16,5 +16,8 @@ ensuite npm install et ng serve.
 
 Actuellement il y a certains bugs au niveau de l'enregistrement des contacts 
 que nous n'avons pas encore géré par manque de temps.
-"l'annonce nous étant parvenu jeudi 28/05/21"
 
+"l'annonce nous est parvenu le jeudi 28/05/21
+et nous étions pris par des obligations scolaire urgentes à gérer cette fin de semaine"
+
+Cordialemnt
