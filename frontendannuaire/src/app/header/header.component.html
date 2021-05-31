@@ -1,0 +1,27 @@
+<header>
+    <h1 class="header-title">
+        Carnet d'adresse
+    </h1>
+    <ul class="header-navigation">
+        <li class="header-navigation-item" *ngIf="isAuth">
+            <a class="header-link" routerLink="/carnet/all-address" routerLinkActive="active">Contacts</a>
+        </li>
+        <li class="header-navigation-item" *ngIf="isAuth">
+            <a class="header-link" routerLink="/carnet/new-address" routerLinkActive="active">Nouveau Contact</a>
+        </li>
+        <li class="header-navigation-item" *ngIf="isAuth">
+            <a class="header-link" style="cursor: pointer" (click)="onLogout()">DECONNEXION</a>
+        </li>
+        <li class="header-navigation-item" *ngIf="!isAuth">
+            <a class="header-link" routerLink="/carnet/auth/login" routerLinkActive="active">CONNEXION</a>
+        </li>
+        <li class="header-navigation-item" *ngIf="!isAuth">
+            <a class="header-link" routerLink="/carnet/auth/signup" routerLinkActive="active">INSCRIPTION</a>
+        </li>
+    </ul>
+</header>
+<div class="hero-image" *ngIf="mode === 'list'">
+    <h2 class="hero-text">
+        contacts
+    </h2>
+</div>

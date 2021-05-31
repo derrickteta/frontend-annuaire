@@ -1,0 +1,11 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<p class="text-center" *ngIf="address.length <= 0 && !loading">Aucune Addresse !</p>
+<div class="address-grid" *ngIf="address.length >= 0">
+    <div class="address-pane" *ngFor="let address of address" [ngClass]="{'open': address._id === chosenId}" (click)="onProductClicked(address._id)">
+        <div class="address-info">
+            <h3>
+                {{ address.name }} {{address.firstname}}
+            </h3>
+        </div>
+    </div>
+</div>

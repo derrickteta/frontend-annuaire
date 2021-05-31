@@ -1,0 +1,32 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2">
+    <form [formGroup]="adressForm">
+        <div class="form-group">
+            <label for="name">nom</label>
+            <input type="text" placeholder="nom du contact" id="title" formControlName="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="firstname">prenom</label>
+            <input type="text" placeholder="prenom du contact" id="firstname" formControlName="firstname" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="phone">Telephone</label>
+            <input type="number" id="phone" placeholder=" téléphone" class="form-control" formControlName="phone" min="0">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" placeholder=" email du contact" id="email" formControlName="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="adress">adresse</label>
+            <input type="text" placeholder="adresse du contact" id="adress" formControlName="adress" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="2" rows="1" class="form-control" formControlName="description" placeholder="décrivez votre relation avec le contact"></textarea>
+        </div>
+        <button class="btn btn-primary" (click)="onSubmit()" [disabled]="addressForm.invalid">Valider</button>
+        <br><br><br>
+        <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
+    </form>
+</div>

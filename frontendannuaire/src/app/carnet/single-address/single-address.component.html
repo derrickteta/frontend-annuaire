@@ -1,0 +1,16 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div *ngIf="!loading">
+    <button class="btn btn-link" (click)="onGoBack()"><< Retour</button>
+    <div class="single-address-pane">
+        <div class="single-address-info">
+            <h1>{{ address?.name }}</h1>
+            <h1>{{ address?.firstname }}</h1>
+            <h1 class="single-address-price">{{ address?.phone}}</h1>
+            <h1>{{ address?.email }}</h1>
+            <h1>{{ address?.address }}</h1>
+            <p>{{ address?.description }}</p>
+            <button class="btn btn-success m-1" (click)="onModify()" [disabled]="part >= 3 && userId !== address?.userId">Modifier</button>
+            <button class="btn btn-danger m-1" (click)="onDelete()" [disabled]="part >= 3 && userId !== address?.userId">Supprimer</button>
+        </div>
+    </div>
+</div>
