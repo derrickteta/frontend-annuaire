@@ -20,4 +20,4 @@ que nous n'avons pas encore géré par manque de temps.
 "l'annonce nous est parvenu le jeudi 28/05/21
 et nous étions pris par des obligations scolaire urgentes à gérer cette fin de semaine"
 
-Cordialemnt
+Cordialement
